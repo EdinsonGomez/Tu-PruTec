@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: $background-primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 200px;
+  height: 80px;
+
+  p {
+    color: white;
+  }
+}
