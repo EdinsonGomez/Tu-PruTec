@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-item-btn.disableHoverColor:hover {
+  background-color: inherit;
+}
+
+.menu-item-underline.active {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  background-color: $background-primary-color;
+  height: 3px;
+  width: 100%;
+}
+
+.menu-item-sub-list {
+  &.down-menu {
+    margin-top: 4px;
+  }
+
+  &.left-menu {
+    margin-left: 3px;
+  }
+}

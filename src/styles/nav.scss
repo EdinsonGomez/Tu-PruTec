@@ -1,19 +1,9 @@
 @import "./variables.scss";
 
 .nav {
+  $padding-x: 30px;
   background-color: white;
   display: flex;
-}
-
-.menu-btn-container {
-  position: relative;
-}
-
-.menu-btn-underline.active {
-  position: absolute;
-  right: 0;
-  bottom: -2px;
-  background-color: $background-primary-color;
-  height: 2px;
-  width: 100%;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
 }

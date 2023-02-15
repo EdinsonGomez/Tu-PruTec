@@ -4,31 +4,6 @@ import MenuComponent from "./MenuComponent";
 import { getNavList } from "../services/navServices";
 import "../styles/nav.scss";
 
-// const navList = [
-//   {
-//     "card_list": [],
-//     "pays_transfer": [
-//       {
-//         "between_cards": [],
-//         "banks": [],
-//         "credit_card": [
-//           {
-//             "visa": [],
-//             "master_card": []
-//           }
-//         ]
-//       }
-//     ],
-//     "support": [
-//       {
-//         "lock": [],
-//         "change_pass": []
-//       }
-//     ],
-//     "enterprises": []
-//   }
-// ]
-
 const Nav = () => {
   const [navList, setNavList] = useState(null);
 
@@ -48,8 +23,8 @@ const Nav = () => {
   return (
     <nav className="nav">
       {navList && Object.entries(navList).map(([keyValue, value]) => (
-        <List key={keyValue} dense>
-          <MenuComponent keyValue={keyValue} value={value} />
+        <List sx={{ padding: 0 }} key={keyValue} dense>
+          <MenuComponent keyValue={keyValue} value={value} disableHoverColor />
         </List>
       ))}
     </nav>
